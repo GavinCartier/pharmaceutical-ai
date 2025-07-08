@@ -1,7 +1,14 @@
-{% block title %}Tauler de Control{% endblock %}
+<!-- 
+ This is the dashboard
+ Contains:
+ - Overview that lists product numbers and categories
+ - A section to list more categories
+ - List of upcoming expirations
+ - Component to display statistics
+ -->
 
 {% block content %}
 <section>
-    {% include 'components/sidebar.html' %}
+    {% include 'components/overview.html' %}
 </section>
 {% endblock %}

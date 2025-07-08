@@ -1,7 +1,12 @@
 <!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
-<head><title>Flask App</title></head>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
 <body>
+    {% include 'components/sidebar.html' %}
+    {% include 'dashboard.html' %}
 </body>
 </html>
