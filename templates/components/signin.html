@@ -8,26 +8,33 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/White_circle_with_black_cross.svg" alt="Logo IA Farmàcia" />
-      <span><strong>IA Farmàcia</strong></span>
+    <div class="login-container">
+
+        <div class="login-header">
+            <img 
+                src="{{ url_for('static', filename='images/Farmacia-IA.png') }}"
+                alt="Farmacia IA logo"
+                class="login-logo"
+            />
+            <h2>IA FARMACIA</h2>
+        </div>
+        <div class="login-container">
+            <h1>Inicia sessió</h1>
+            <form action="/login" method="post">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" placeholder="Escriu el teu nom" required />
+        
+                <label for="password">Contrasenya</label>
+                <input type="password" id="password" name="password" placeholder="Contrasenya" required />
+        
+                <button type="submit">Entra</button>
+            </form>
+        
+            <p class="register">No tens compte? <a href="/register">crea compte</a></p>
+
+
+        </div>
     </div>
-
-    <h1>Inicia sessió</h1>
-
-    <form action="/login" method="post">
-      <label for="email">Correu electrònic</label>
-      <input type="email" id="email" name="email" placeholder="Escriu el teu nom" required />
-
-      <label for="password">Contrasenya</label>
-      <input type="password" id="password" name="password" placeholder="Contrasenya" required />
-
-      <button type="submit">Entra</button>
-    </form>
-
-    <p class="register">No tens compte? <a href="/register">crea compte</a></p>
-  </div>
 
 </body>
 </html>
