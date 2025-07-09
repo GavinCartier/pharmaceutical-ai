@@ -3,4 +3,64 @@ body {
     background-color: white;
     display: flex;
     flex-direction: horizontal;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    background-color: #eee;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.register {
+    margin-top: 20px;
+}
+
+.register a {
+    color: #0066cc;
+    text-decoration: none;
 }
