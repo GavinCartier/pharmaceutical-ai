@@ -8,6 +8,7 @@ body {
 .sidebar {
     padding: 40px;
     width: 300px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sidebar-top {
@@ -25,5 +26,23 @@ body {
 
 .sidebar-list {
     list-style-type: none;
-    justify-items: center;
+    color: #8a8a8a
+}
+
+.sidebar-list-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #8a8a8a;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar-list-item svg {
+    stroke-width: 2.5;
 }
