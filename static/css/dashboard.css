@@ -1,0 +1,48 @@
+.dashboard {
+    background-color: rgb(244, 244, 244);
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.overview {
+    padding: 30px;
+}
+
+.overview-content {
+    background-color: white;
+    padding: 25px;
+}
+
+.overview-content-income {
+    display: flex;
+    flex-direction: horizontal;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+}
+
+.overview-content-income-orders {
+    background-color:#2b78c2;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    place-items: center;
+    margin: 12px;
+    width: 100%;
+}
+
+.overview-content-income-orders-text {
+    padding: 10px;
+}
+
+.overview-content-income-orders-graph {
+    justify-items: center;
+}
+
+.overview-content-income-products {
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    margin: 12px;
+    width: 100%;
+}

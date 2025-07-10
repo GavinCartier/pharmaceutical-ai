@@ -7,8 +7,14 @@
  - Component to display statistics
  -->
 
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+{% endblock %}
+
 {% block content %}
-<section>
-    {% include 'components/overview.html' %}
-</section>
+<div class="dashboard">
+    <section class="overview">
+        {% include 'components/overview.html' %}
+    </section>
+</div>
 {% endblock %}
