@@ -1,13 +1,14 @@
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: horizontal;
-}
-
-.container {
-    text-align: center;
-    width: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .logo {
@@ -60,4 +61,50 @@ button {
 .register a {
     color: #0066cc;
     text-decoration: none;
+}
+
+.sidebar {
+    padding: 40px;
+    width: 300px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 10px;
+}
+
+.sidebar-top-image {
+    object-fit: contain;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    justify-items: center;
+}
+
+.sidebar {
+    padding: 40px;
+    width: 300px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 10px;
+}
+
+.sidebar-top-image {
+    object-fit: contain;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    justify-items: center;
 }
