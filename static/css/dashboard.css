@@ -8,14 +8,15 @@ h3 {
 
 .dashboard {
     background-color: rgb(248, 248, 248);
-    width: 80%;
+    width: 100%;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: horizontal;
 }
 
 section {
-    margin: 30px;
+    margin: 20px 30px;
 }
 
 .content {
