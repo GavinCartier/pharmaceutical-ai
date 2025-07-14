@@ -1,29 +1,19 @@
-.sidebar {
-    padding: 40px;
-    width: 300px;
-}
-
-.sidebar-top {
-    display: flex;
-    flex-direction: horizontal;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    gap: 10px;
-}
-
 .sidebar-top-image {
     object-fit: contain;
 }
 
 .sidebar-list {
     list-style-type: none;
+    text-align: left;
+    color: #8a8a8a;
 }
 
 .sidebar {
-    padding: 40px;
+    padding-top: 30px;
+    padding-right: 20px;
     width: 300px;
     font-family: 'Poppins', sans-serif;
+    border-right: 1px solid #d1d1d1;
 }
 
 .sidebar-top {
@@ -37,11 +27,6 @@
 
 .sidebar-top-image {
     object-fit: contain;
-}
-
-.sidebar-list {
-    list-style-type: none;
-    color: #8a8a8a
 }
 
 .sidebar-list-item {
@@ -65,4 +50,5 @@
 hr {
     width: 75%;
     margin: 0 auto;
+    border: none; border-top: 1px solid lightgray;
 }

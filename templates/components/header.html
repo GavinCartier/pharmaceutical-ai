@@ -1,0 +1,17 @@
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+{% endblock %}
+
+<div class="header">
+    <form class="searchbar">
+        <button type="submit">🔍</button>
+        <input type="text" placeholder="cerca aqui" name="search">
+    </form>
+    <div class="options">
+        <i data-lucide="message-square-text"></i>
+        <i data-lucide="bell"></i>
+        <button>
+            + Nou Producte
+        </button>
+    </div>
+</div>

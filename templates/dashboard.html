@@ -13,8 +13,25 @@
 
 {% block content %}
 <div class="dashboard">
-    <section class="overview">
-        {% include 'components/overview.html' %}
-    </section>
+    <!-- Left side of the dashboard (overview & more categories) -->
+    <div style="width: 100%">
+        <section>
+            {% include 'components/overview.html' %}
+        </section>
+        <section>
+            {% include 'components/morecategories.html' %}
+        </section>
+    </div>
+
+    <!-- Right side of the dashboard (expiration & statistics) -->
+    <div style="width: 100%">
+        <section>
+            {% include 'components/expiration.html' %}
+        </section> 
+        <section>
+            {% include 'components/statistics.html' %}
+        </section>
+    </div>
+    
 </div>
 {% endblock %}

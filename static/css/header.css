@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header svg {
+    width: 30px;
+    height: 30px;
+    color: gray;
+}
+
+.searchbar {
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    flex-direction: row;
+    margin: 30px;
+    width: 40%;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+}
+
+.searchbar input::placeholder {
+    color: #888;
+}
+
+.searchbar button {
+    background: none;
+    padding-left: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.options button {
+    background-color: #3a69ff;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
