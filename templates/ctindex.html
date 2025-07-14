@@ -1,0 +1,18 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+    {% include 'components/sidebar.html' %}
+    {% include 'controltable.html' %}
+</body>
+</html>
+<script>
+  lucide.createIcons();
+</script>
