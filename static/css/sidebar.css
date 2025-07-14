@@ -18,6 +18,8 @@
 
 .sidebar-list {
     list-style-type: none;
+    text-align: left;
+    color: #8a8a8a;
 }
 
 .sidebar {
@@ -37,11 +39,6 @@
 
 .sidebar-top-image {
     object-fit: contain;
-}
-
-.sidebar-list {
-    list-style-type: none;
-    color: #8a8a8a
 }
 
 .sidebar-list-item {
@@ -65,4 +62,5 @@
 hr {
     width: 75%;
     margin: 0 auto;
+    border: none; border-top: 1px solid lightgray;
 }

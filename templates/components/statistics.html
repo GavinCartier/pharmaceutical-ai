@@ -1,0 +1,40 @@
+{% block head %}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+<div class="title">
+    <h2>Estadística</h2>
+    <button class="expiration-title-button">Aquest mes ▼</button>
+</div>
+<div class="content">
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+        datasets: [{
+          data: [10, 20, 15, 30],
+          backgroundColor: '#1e62a3',
+          borderColor: '#1e62a3',
+          borderWidth: 2,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+        legend: {
+                display: false  // ← hide the legend
+            }
+        },  
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+</script>
+</div>
