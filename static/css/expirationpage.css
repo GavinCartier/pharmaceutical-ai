@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .expiration-page {
     width: 100%;
 }
@@ -5,17 +9,57 @@
 .expiration-page-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .expiration-page-list {
+    padding: 40px;
+    width: 100%;
+}
 
+.expiration-page-list img {
+    height: 60px;
+    padding: 0;
+}
+
+.expiration-page-list th,
+.expiration-page-list td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
 }
 
 .expiration-page-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.expiration-page strong {
+    font-weight: 400;
+}
+
+.expiration-page small {
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
 }
 
 .expiration-page-bottom {
+    padding-right: 100px;
+    justify-content: right;
+    display: flex;
+}
 
+.expiry {
+  color: red;
+  white-space: nowrap;
+}
+
+.expiration-page-bottom button {
+    padding: 10px 20px;
+    background-color: #3a69ff;
+    color: white;
+    border-radius: 8px;
 }
