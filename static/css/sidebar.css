@@ -11,9 +11,10 @@
 .sidebar {
     padding-top: 30px;
     padding-right: 20px;
-    width: 300px;
+    min-width: 300px;
     font-family: 'Poppins', sans-serif;
     border-right: 1px solid #d1d1d1;
+    justify-content: center;
 }
 
 .sidebar-top {

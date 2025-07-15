@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/expirationpage.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+    {% include 'components/sidebar.html' %}
+    <div style="display: flex; flex-direction: column; width: 100%">
+      {% include 'components/header.html' %}
+      
+      <!-- Actual expiration page component -->
+      <div class="expiration-page">
+
+        <!-- The list of expiration page columns -->
+        <div class="expiration-page-top">
+            <div class="expiration-page-top-column">
+                Categoria
+            </div>
+            <div>
+                Número (ID)
+            </div>
+            <div>
+                Nom
+            </div>
+            <div>
+                Qtat
+            </div>
+            <div>
+                Data de caducitat
+            </div>
+        </div>
+
+        <!-- The actual list of expiring medications -->
+        <div class="expiration-page-list">
+            <!-- Each expiration medication list entry -->
+             <div class="expiration-page-list-item">
+
+             </div>
+        </div>
+
+        <!-- The button on the bottom -->
+        <div class="expiration-page-bottom">
+
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
+<script>
+  lucide.createIcons();
+</script>

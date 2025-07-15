@@ -1,0 +1,21 @@
+.expiration-page {
+    width: 100%;
+}
+
+.expiration-page-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.expiration-page-list {
+
+}
+
+.expiration-page-list-item {
+
+}
+
+.expiration-page-bottom {
+
+}

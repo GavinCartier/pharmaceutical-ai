@@ -15,5 +15,9 @@ def signin():
 def register():
     return render_template('/components/register.html')
 
+@app.route('/expiration')
+def expiration():
+    return render_template('components/expirationpage.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
