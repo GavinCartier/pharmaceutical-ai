@@ -1,17 +1,17 @@
 /* Sidebar container */
 .sidebar {
-    position: fixed;            /* Stay fixed to the side */
+    position: sticky;
     top: 0;
-    left: 0;
-    height: 100vh;              /* Full height of viewport */
-    width: 250px;               /* Sidebar width */
+    align-self: flex-start;           /* Needed in flex column layout */
+    height: 100vh;
+    min-width: 250px;
+    width: 250px;
     padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #f9f9f9;  /* Light background */
+    background-color: #f9f9f9;
     border-right: 1px solid #d1d1d1;
     font-family: 'Poppins', sans-serif;
-    border-right: 1px solid #d1d1d1;
 }
 
 /* Top section with logo and title */
