@@ -14,7 +14,7 @@
 {% block content %}
 <div class="dashboard">
     <!-- Left side of the dashboard (overview & more categories) -->
-    <div style="width: 100%">
+    <div class="dashboard-part">
         <section>
             {% include 'components/overview.html' %}
         </section>
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Right side of the dashboard (expiration & statistics) -->
-    <div style="width: 100%">
+    <div class="dashboard-part">
         <section>
             {% include 'components/expiration.html' %}
         </section> 
