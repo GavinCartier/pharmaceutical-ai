@@ -53,15 +53,6 @@ button {
     cursor: pointer;
 }
 
-.register {
-    margin-top: 20px;
-}
-
-.register a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
 .main-content {
     margin-left: 250px; /* same as sidebar width */
     margin-top: 80px;   /* same as header height */

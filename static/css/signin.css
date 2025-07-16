@@ -1,0 +1,90 @@
+/* signin.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .login-header {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 0;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 1rem;
+    background-color: #e5e5e5;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .register {
+    margin-top: 25px;
+    font-size: 0.95rem;
+  }
+  
+  .register a {
+    color: #0056d6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
