@@ -6,7 +6,6 @@ body {
     background-color: white;
     display: flex;
     flex-direction: horizontal;
-    align-items: center;
     justify-content: center;
     position: relative;
 }
