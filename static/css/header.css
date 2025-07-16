@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     top: 0;
-    left: 250px; /* EXACTLY the width of the sidebar */
+    left: 260px; /* EXACTLY the width of the sidebar */
     width: calc(100% - 250px);
     height: 80px;
     background-color: white;
