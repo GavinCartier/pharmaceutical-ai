@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quadre de Comandes</title>
   <style>
+    <!-- Google Fonts: Keeping Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    
     body {
-      font-family: Arial, sans-serif;
+      font-family: Raleway, sans-serif;
       background: #f4f4f4;
       margin: 0;
       padding: 20px;
@@ -140,26 +143,77 @@
     </div>
 
     <div class="section">
+      <style>
+  .recent-sales {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .sale-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  .sale-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .sale-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .sale-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sale-info span:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  .sale-info span:last-child {
+    font-size: 12px;
+    color: #666;
+  }
+</style>
       <div class="chart">
         <h3>Estadística</h3>
         <p>Aquest mes</p>
-        <img src="chart.png" alt="Gràfic de ventes" style="width:100%; border-radius:8px;" />
+        <img src="https://lh3.googleusercontent.com/d/1upUyftRRni4liAN_FM2nnpN6X1-TuK3Q" alt="Gràfic de ventes" style="width:100%; border-radius:8px;" />
       </div>
       <div class="recent-sales">
         <h3>Ventes Recents</h3>
-        <div class="sale-item">
-          <span>Simvastatina (500 mg)</span>
-          <span>30/08/2024</span>
-        </div>
-        <div class="sale-item">
-          <span>Amoxicil·lina (375 mg)</span>
-          <span>01/09/2024</span>
-        </div>
-        <div class="sale-item">
-          <span>Omeprazol (10 mg)</span>
-          <span>03/09/2024</span>
-        </div>
+      <div class="sale-item">
+    <span>
+      <img src="simvastatina.png" alt="Simvastatina" style="width:30px; height:30px; margin-right:10px; vertical-align:middle;" />
+      Simvastatina (500 mg)
+    </span>
+    <span>30/08/2024</span>
       </div>
+      <div class="sale-item">
+    <span>
+      <img src="amoxicilina.png" alt="Amoxicil·lina" style="width:30px; height:30px; margin-right:10px; vertical-align:middle;" />
+      Amoxicil·lina (375 mg)
+    </span>
+    <span>01/09/2024</span>
+      </div>
+  <div class="sale-item">
+    <span>
+      <img src="omeprazol.png" alt="Omeprazol" style="width:30px; height:30px; margin-right:10px; vertical-align:middle;" />
+      Omeprazol (10 mg)
+    </span>
+    <span>03/09/2024</span>
+  </div>
+</div>
     </div>
   </div>
 </body>
