@@ -15,6 +15,7 @@ def signin():
 def register():
     return render_template('/components/register.html')
 
+<<<<<<< HEAD
 @app.route('/newproduct')
 def newproduct(): 
     return render_template('components/newproduct.html')
@@ -22,6 +23,11 @@ def newproduct():
 @app.route('/controltable')
 def controltable():
     return render_template('ctindex.html')
+=======
+@app.route('/expiration')
+def expiration():
+    return render_template('components/expirationpage.html')
+>>>>>>> b29dd82ba978a15128c18175d7b59c374bc69f70
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -11,7 +11,7 @@
     background-color: #f9f9f9;  /* Light background */
     border-right: 1px solid #d1d1d1;
     font-family: 'Poppins', sans-serif;
-    z-index: 1000;
+    border-right: 1px solid #d1d1d1;
 }
 
 /* Top section with logo and title */
