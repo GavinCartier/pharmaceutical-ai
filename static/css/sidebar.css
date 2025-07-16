@@ -1,41 +1,61 @@
-.sidebar-top-image {
-    object-fit: contain;
+/* Sidebar container */
+.sidebar {
+    position: fixed;            /* Stay fixed to the side */
+    top: 0;
+    left: 0;
+    height: 100vh;              /* Full height of viewport */
+    width: 250px;               /* Sidebar width */
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f9f9f9;  /* Light background */
+    border-right: 1px solid #d1d1d1;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
 }
 
+/* Top section with logo and title */
+.sidebar-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+/* Logo image */
+.sidebar-top-image {
+    object-fit: contain;
+    height: 50px; /* Adjust as needed */
+}
+
+/* Navigation list */
 .sidebar-list {
     list-style-type: none;
-    text-align: left;
+    margin: 0;
+    padding: 0;
     color: #8a8a8a;
 }
 
-.sidebar {
-    padding-top: 30px;
-    padding-right: 20px;
-    width: 300px;
-    font-family: 'Poppins', sans-serif;
-    border-right: 1px solid #d1d1d1;
-}
-
-.sidebar-top {
-    display: flex;
-    flex-direction: horizontal;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    gap: 10px;
-}
-
-.sidebar-top-image {
-    object-fit: contain;
-}
-
+/* Each list item */
 .sidebar-list-item {
     display: flex;
-    gap: 20px;
-    padding: 15px 20px;
     align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
+.sidebar-list-item:hover {
+    background-color: #eeeeee;
+    border-radius: 6px;
+}
+
+/* Icons and text */
 .sidebar a {
     text-decoration: none;
     color: #8a8a8a;
@@ -43,12 +63,15 @@
     font-weight: 500;
 }
 
+/* Optional: style SVG icons */
 .sidebar-list-item svg {
     stroke-width: 2.5;
 }
 
+/* Divider line */
 hr {
     width: 75%;
     margin: 0 auto;
-    border: none; border-top: 1px solid lightgray;
+    border: none;
+    border-top: 1px solid lightgray;
 }

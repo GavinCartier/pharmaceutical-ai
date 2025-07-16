@@ -62,3 +62,9 @@ button {
     color: #0066cc;
     text-decoration: none;
 }
+
+.main-content {
+    margin-left: 250px; /* same as sidebar width */
+    margin-top: 80px;   /* same as header height */
+    padding: 20px;
+}
