@@ -15,6 +15,14 @@ def signin():
 def register():
     return render_template('/components/register.html')
 
+@app.route('/newproduct')
+def newproduct(): 
+    return render_template('components/newproduct.html')
+
+@app.route('/controltable')
+def controltable():
+    return render_template('ctindex.html')
+
 @app.route('/expiration')
 def expiration():
     return render_template('components/expirationpage.html')
