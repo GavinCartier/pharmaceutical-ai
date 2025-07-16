@@ -1,0 +1,11 @@
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/transaction.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <section class="overview">
+        {% include 'components/transaction.html' %}
+    </section>
+</div>
+{% endblock %}

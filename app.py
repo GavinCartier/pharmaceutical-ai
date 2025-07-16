@@ -27,5 +27,9 @@ def controltable():
 def expiration():
     return render_template('components/expirationpage.html')
 
+@app.route('/transaction')
+def transaction():
+    return render_template('transactionindex.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
