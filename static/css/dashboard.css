@@ -9,6 +9,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
+    overflow: auto;
 }
 
 .dashboard-part {
@@ -23,6 +24,12 @@ section {
     background-color: white;
     padding: 25px;
     border-radius: 8px;
+}
+
+canvas#myChart {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
 }
 
 .overview-content-income {
@@ -72,6 +79,7 @@ section {
 .overview-content-categories {
     display: flex;
     flex-direction: horizontal;
+    justify-content: space-between;
 }
 
 .overview-content-category {
