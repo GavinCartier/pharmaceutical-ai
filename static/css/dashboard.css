@@ -141,10 +141,7 @@ canvas#myChart {
     .dashboard {
         flex-direction: column;
     }
-
-    .dashboard-part {
-    }
-
+    
     section {
         width: 600px;
         justify-self: center;
