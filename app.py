@@ -15,7 +15,7 @@ mysql = MySQL(app)
 
 @app.route("/home")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", active_page='home')
 
 # Login handler
 @app.route("/", methods=["GET", "POST"])
@@ -32,7 +32,7 @@ def login():
             return redirect(url_for('home'))
         else:
             return render_template("register.html", error="Invalid username or password")
-    return render_template("register.html")
+    return render_template("components/register.html")
 # Start the Flask app
 
 @app.route('/signin')
@@ -53,11 +53,16 @@ def controltable():
 
 @app.route('/expiration')
 def expiration():
-    return render_template('components/expirationpage.html')
+    return render_template('components/expirationpage.html', active_page='expiration')
 
 @app.route('/transaction')
 def transaction():
-    return render_template('transactionindex.html')
+    return render_template('transactionindex.html', active_page='transaction')
+
+@app.route('/promotion')
+def promotion():
+    return render_template('components/promotionpage.html', active_page='promotion')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
