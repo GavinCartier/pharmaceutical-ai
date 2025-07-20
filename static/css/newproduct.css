@@ -1,0 +1,64 @@
+.form-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Optional: center vertically */
+  max-height: 70vh;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    width: 100%;
+    justify-self: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-weight:normal;
+  }
+
+  .form-group select {
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .button-wrapper {
+  display: flex;
+  justify-content: right;  /* Pushes button to the right */
+  margin-top: 20px;
+  width: 100%;
+  
+    }
+
+.button-wrapper button {
+    background-color: #004aad;
+    color: white;
+    border-radius: 10px;
+    margin-right: 15%;
+}
+
+  h3 {
+    margin-left: 10%;
+    font-weight: 550;
+  }
+
+@media screen and (max-width: 900px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        
+    }
+}

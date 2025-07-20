@@ -31,7 +31,7 @@ def login():
             session['username'] = user['username']
             return redirect(url_for('home'))
         else:
-            return render_template("register.html", error="Invalid username or password")
+            return render_template("components/register.html", error="Invalid username or password")
     return render_template("components/register.html")
 # Start the Flask app
 

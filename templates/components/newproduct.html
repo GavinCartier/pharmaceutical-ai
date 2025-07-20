@@ -3,97 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>IA FARMACIA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newproduct.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <form action="http://localhost:5000/submit" method="post"></form>
     <style>
         body { font-family: Arial, sans-serif; }
-        .sidebar {
-            height: 100vh;
-            width: 220px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #f0f0f0;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px 20px;
-            color: #333;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            background-color: #ddd;
-        }
-        .main-content {
-            margin-left: 240px;
-            padding: 20px;
-        }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h4 class="px-3">IA FARMACIA</h4>
-        <a href="#">Anàlisi</a>
-        <a href="#">Transacció</a>
-        <a href="#">Caducitat</a>
-        <a href="#">Proveidors</a>
-        <a href="#">Ingressos</a>
-        <a href="#">Promoció</a>
-        <a href="#">Configuració</a>
-        <a href="#">Tancar la sessió</a>
-        <a href="#">Ajuda</a>
-    </div>
-
-    <div class="main-content">
-        <div class="d-flex justify-content-between mb-3">
-            <input class="form-control w-50" type="search" placeholder="cerca aquí">
-            <button type="submit" class="btn btn-primary">Nou Producte</button>
+    <div class="main-container">
+      {% include 'components/sidebar.html' %}
+      <div class="main-content">
+        {% include 'components/header.html' %}
+        <div style="margin-top: 60px;">
+            <h3>Completa aquí</h3>
+            <form class="form-container">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nom">Número (ID)</label>
+                        <input type="ID" id="nom" name="nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom del Producte</label>
+                        <input type="text" id="cognom" name="cognom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="1uantitat">Quantitat</label>
+                        <input type="text" id="farmacia" name="farmacia" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="mil•ligrams">Mil•ligrams</label>
+                        <input type="text" id="ubicacio" name="ubicacio" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="preu per unitat">Preu per unitat</label>
+                        <input type="text" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="data de caducitat">Data de caducitat</label>
+                        <input type="text" id="password" name="password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="nom de proveedor">Nom de Proveedor</label>
+                        <input type="text" id="password" name="password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Categories</label>
+                        <select id="category" name="category">
+                            <option selected disabled>Selecciona aquí</option>
+                            <option value="cap">Cap</option>
+                            <option value="peu">Peu</option>
+                            <option value="intestins">Intestins</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="button-wrapper">
+                    <button type="submit">Afegeix</button>
+                </div>
+            </form>
         </div>
-
-        <h3>Completa aquí</h3>
-        <form>
-            <div class="row">
-                <!-- Left column -->
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="id" class="form-label">Número (ID)</label>
-                        <input type="text" class="form-control" id="id">
-                    </div>
-                    <div class="mb-3">
-                        <label for="nom" class="form-label">Nom del Producte</label>
-                        <input type="text" class="form-control" id="nom">
-                    </div>
-                    <div class="mb-3">
-                        <label for="quantitat" class="form-label">Quantitat</label>
-                        <input type="number" class="form-control" id="quantitat">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mg" class="form-label">Mil·ligrams</label>
-                        <input type="text" class="form-control" id="mg">
-                    </div>
-                </div>
-
-                <!-- Right column -->
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="preu" class="form-label">Preu per unitat</label>
-                        <input type="text" class="form-control" id="preu">
-                    </div>
-                    <div class="mb-3">
-                        <label for="data" class="form-label">Data de caducitat</label>
-                        <input type="date" class="form-control" id="data">
-                    </div>
-                    <div class="mb-3">
-                        <label for="proveedor" class="form-label">Nom de Proveedor</label>
-                        <input type="text" class="form-control" id="proveedor">
-                    </div>
-                    <div class="mb-3">
-                        <label for="categories" class="form-label">Categories</label>
-                        <input type="text" class="form-control" id="categories">
-                    </div>
-                </div>
-            </div>
-        </form>
     </div>
+        
+    </div>
+</body>
+<script>
+  lucide.createIcons();
+</script>
+    
     
