@@ -68,6 +68,16 @@
     stroke-width: 2.5;
 }
 
+.sidebar-list-item.active {
+    background-color: #2962ff; /* Blue background */
+    border-radius: 8px;
+}
+
+.sidebar-list-item.active a {
+    color: white;  /* White text for selected */
+}
+
+
 /* Divider line */
 hr {
     width: 75%;
@@ -79,3 +89,5 @@ hr {
 h2 {
     font-weight: 400;
 }
+
+

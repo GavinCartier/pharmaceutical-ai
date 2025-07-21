@@ -14,27 +14,40 @@
     </div>
     
     <ul class="sidebar-list">
-        <li
-            class="sidebar-list-item"
-        ><i data-lucide="layout-grid"></i><a href="#">Tauler de control</a></li>
+        <li class="sidebar-list-item {% if active_page == 'home' %}active{% endif %}">
+            <a href="{{ url_for('home') }}">
+              <i data-lucide="file-text"></i>
+              Tauler de control
+            </a>
+        </li>
         <li
             class="sidebar-list-item"
         ><i data-lucide="chart-column"></i><a href="#">Anàlisi</a></li>
-        <li
-            class="sidebar-list-item"
-        ><i data-lucide="server"></i><a href="#">Transacció</a></li>
-        <li
-            class="sidebar-list-item"
-        ><i data-lucide="users"></i><a href="#">Caducitat</a></li>
+        <li class="sidebar-list-item {% if active_page == 'transaction' %}active{% endif %}">
+            <a href="{{ url_for('transaction') }}">
+              <i data-lucide="file-text"></i>
+              Transacció
+            </a>
+        </li>
+          
+        <li class="sidebar-list-item {% if active_page == 'expiration' %}active{% endif %}">
+            <a href="{{ url_for('expiration') }}">
+              <i data-lucide="file-text"></i>
+              Caducitat
+            </a>
+        </li>
         <li
             class="sidebar-list-item"
         ><i data-lucide="shopping-bag"></i><a href="#">Proveïdors</a></li>
         <li
             class="sidebar-list-item"
         ><i data-lucide="banknote-arrow-up"></i><a href="#">Ingressos</a></li>
-        <li
-            class="sidebar-list-item"
-        ><i data-lucide="megaphone"></i><a href="#">Promoció</a></li>
+        <li class="sidebar-list-item {% if active_page == 'promotion' %}active{% endif %}">
+            <a href="{{ url_for('promotion') }}">
+              <i data-lucide="file-text"></i>
+              Caducitat
+            </a>
+        </li>
         <li
             class="sidebar-list-item"
         ><i data-lucide="settings"></i><a href="#">Configuració</a></li>
