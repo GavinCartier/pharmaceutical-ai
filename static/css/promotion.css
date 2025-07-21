@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.promotion-page {
+    width: 100%;
+}
+
+.promotion-page-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.promotion-page-list {
+    padding: 40px;
+    width: 100%;
+}
+
+.promotion-page-list img {
+    height: 60px;
+    padding: 0;
+}
+
+.promotion-page-list th,
+.promotion-page-list td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.promotion-page-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.promotion-page strong {
+    font-weight: 400;
+}
+
+.promotion-page small {
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+}
+
+.promotion-page-bottom {
+    padding-right: 100px;
+    justify-content: right;
+    display: flex;
+}
+
+.promotion {
+  color: red;
+  white-space: nowrap;
+}
+
+.promotion-page-bottom button {
+    padding: 10px 20px;
+    background-color: #3a69ff;
+    color: white;
+    border-radius: 8px;
+}

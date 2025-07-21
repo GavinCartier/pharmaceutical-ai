@@ -59,5 +59,9 @@ def expiration():
 def transaction():
     return render_template('transactionindex.html')
 
+@app.route('/promotion')
+def promotion():
+    return render_template('components/promotion.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
