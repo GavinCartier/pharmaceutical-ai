@@ -63,10 +63,5 @@ def transaction():
 def promotion():
     return render_template('components/promotionpage.html', active_page='promotion')
 
-
-@app.route('/promotion')
-def promotion():
-    return render_template('components/promotion.html')
-
 if __name__ == "__main__":
     app.run(debug=True)
